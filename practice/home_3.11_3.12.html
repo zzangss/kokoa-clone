@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            body{
+                height: 1000vh;
+                margin : 20px;
+            }
+            div{
+                color : white;
+                width : 300px;
+                height : 300px;
+            }
+            #green{
+                background-color: teal;
+                position :fixed;
+                opacity : 0.2;
+            }
+            #different{
+                /*위아래왼오 중 하나만 바꾸어줘도 
+                div는 다른 div에 영향을 받지 않는다. 그것이
+                position fixed와 함께 쓰면 일어나는 일이다.*/
+                /*left : 10px;
+                position :fixed;
+                width : 320px;*/
+                background-color: wheat;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "green"></div>
+        <div id = "different"></div>
+    </body>
+</html>

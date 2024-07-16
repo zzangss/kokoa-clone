@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                height: 1000vh;
+                margin : 50px;
+            }
+            span{
+                background-color: yellowgreen;
+                padding: 5px;
+                border-radius: 10px;
+            }   
+            /* div > span{
+                color : white; 
+                div의 바로 아래 자식인 span에만 적용된다는 의미
+            } */
+            div span{
+                text-decoration: underline;
+            }
+            input{
+                border : 1px solid wheat;
+            }
+            input:required{
+                border-color: tomato;
+            }
+            input[placeholder~="name"]{
+                background-color:pink;
+            }
+            /* p+span{
+                color:white;
+            }p의 바로! 뒤에 나오는 형제 span의 색을 바꾼다.
+            p~span{
+                color:white;    
+            }
+            p 바로 뒤에 나오는 형제가 아니어도 적용 ok */
+
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <!-- <p> 
+                hlfeladfffffffffff <span>inside</span> 
+            </p>
+            <address>hi</address>
+            <span>hello</span> -->
+            <form>
+                <input type="text" placeholder="First name"/>
+                <input type="text" placeholder="Last name"/>
+                <input type="password" required placeholder="password"/>
+            </form>
+        </div>
+    </body>
+</html>
